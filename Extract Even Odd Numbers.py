@@ -12,4 +12,13 @@ with open("numbers.txt", "r") as file_int, open("even.txt", "w") as file_even, o
             file_odd.write(str(integer))
             file_odd.write("\n")
 # print output
- 
+with open("even.txt", "r") as file_even, open("odd.txt", "r") as file_odd:
+    print("=" * 35, "\n\n\033[1m\033[3mEven numbers from file numbers.txt:\033[0m")
+    for line in file_even:
+        print(line.strip(), end = ",")
+
+    print("\n\n\033[1m\033[3mOdd numbers from file numbers.txt:\033[0m")
+    for line in file_odd:
+        print(line.strip(), end = ",")
+    print("\n")
+    print("=" * 35)
