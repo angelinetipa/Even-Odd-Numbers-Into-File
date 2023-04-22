@@ -6,8 +6,10 @@ with open("numbers.txt", "r") as file_int, open("even.txt", "w") as file_even, o
     #if even, write to even.txt
         if integer % 2 == 0:
             file_even.write(str(integer))
+            file_even.write("\n")
     #if odd, write to odd.txt
         else:
             file_odd.write(str(integer))
+            file_odd.write("\n")
 # print output
  
