@@ -1,19 +1,12 @@
 # Even-Odd-Numbers-Into-File
 
 ## Project
--	Write a method in python to write multiple line of text contents into a text file mylife.txt. See sample output:
-
-```
-Enter line: Beautiful is better than ugly.
-Are there more lines y/n? y
-Enter line: Explicit is better than implicit.
-Are there more lines y/n? y
-Enter line: Simple is better than complex.
-Are there more lines y/n? n 
-```
+-	Write a Python program that reads a text file named numbers.txt that contains 20 integers. 
+The program will create two other text file; the first text file will be named even.txt that will contains all even numbers extracted from the numbers.txt. 
+The second text file will be named odd.txt that will contains all odd numbers extracted from the numbers.txt.
 
 ## Purpose
--	The program will insert multiple line of text contents into a text file.
+-	The program will create text file named even.txt containing the even numbers from numbers.txt and named odd.txt containing the odd numbers from numbers.txt.
 
 ## Commands
 *Gitbash* commands to use to upload in *Github*.
