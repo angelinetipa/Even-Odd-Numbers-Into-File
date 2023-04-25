@@ -1,16 +1,15 @@
-# Read numbers.txt and Create even.txt and odd.txt
+# open numbers.txt[read], even.txt[write] and odd.txt[write]
 with open("numbers.txt", "r") as file_int, open("even.txt", "w") as file_even, open("odd.txt", "w") as file_odd:
-# for each line in file_int
+    # for each line in numbers.txt
     for line in file_int:
         integer = int(line)
-    #if even, write to even.txt
+        #if even, write to even.txt
         if integer % 2 == 0:
-            file_even.write(str(integer))
-            file_even.write("\n")
-    #if odd, write to odd.txt
+            file_even.write(str(integer) + "\n")
+        #if odd, write to odd.txt
         else:
-            file_odd.write(str(integer))
-            file_odd.write("\n")
+            file_odd.write(str(integer) + "\n")
+
 # print output
 with open("even.txt", "r") as file_even, open("odd.txt", "r") as file_odd:
     print("=" * 35, "\n\n\033[1m\033[3mEven numbers from file numbers.txt:\033[0m")
